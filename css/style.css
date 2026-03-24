@@ -4138,6 +4138,23 @@ textarea.form-control-lg {
   overflow-y: visible;
 }
 
+#mainNav.navbar-green,
+#mainNav.navbar-green.navbar-shrink {
+  background-color: rgb(0, 120, 120);
+}
+
+#mainNav.navbar-green .navbar-collapse {
+  background-color: rgb(0, 120, 120);
+}
+
+.navbar-green {
+  --bs-navbar-color: rgba(255,255,255,0.8);
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-brand-color: #fff;
+}
+
+
 .navbar-green {
   background-color: rgb(0, 120, 120); /* manuell hinzugefügt*/
 
