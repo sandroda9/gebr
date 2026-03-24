@@ -1,9 +1,20 @@
+/*!
+* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
+* Copyright 2013-2023 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+*/
+//
+// Scripts
+//
+
 window.addEventListener('DOMContentLoaded', event => {
 
   // Navbar shrink function
   const navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector('#mainNav');
-    if (!navbarCollapsible) return;
+    if (!navbarCollapsible) {
+      return;
+    }
 
     if (window.scrollY === 0) {
       navbarCollapsible.classList.remove('navbar-shrink');
@@ -41,23 +52,33 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   });
 
-  // Toggle projects (3 weitere anzeigen)
+  // ============================================================
+  // Projects toggle (show/hide extra projects)
+  // Requires:
+  //  - extra projects have class: .extra-project
+  //  - CSS: .extra-project { display:none; } (or class-based toggle)
+  //  - button: id="toggleProjects"
+  // ============================================================
+
   const toggleBtn = document.getElementById('toggleProjects');
 
   if (toggleBtn) {
     toggleBtn.addEventListener('click', function () {
-      console.log('Button geklickt');
-
       const extras = document.querySelectorAll('.extra-project');
+      console.log('Button geklickt');
       console.log('Extras gefunden:', extras.length);
+
       if (!extras.length) return;
 
+      // Detect current state (hidden via CSS)
       const isHidden = getComputedStyle(extras[0]).display === 'none';
 
+      // Option A: inline toggle (works if no !important overrides)
       extras.forEach(el => {
         el.style.display = isHidden ? '' : 'none';
       });
 
+      // Update button label
       toggleBtn.textContent = isHidden
         ? 'Weniger Projekte anzeigen'
         : 'Weitere Projekte anzeigen';

@@ -4375,9 +4375,14 @@ textarea.form-control-lg {
   --bs-accordion-active-bg: #fffae6;
 }
 
+
 .extra-project {
   display: none;
 }
+.extra-project.show {
+  display: block;
+}
+
 
 .accordion-button {
   position: relative;
