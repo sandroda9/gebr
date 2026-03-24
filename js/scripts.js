@@ -52,17 +52,24 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     
-    document.getElementById('toggleProjects').addEventListener('click', function () {
+    const toggleBtn = document.getElementById('toggleProjects');
+
+    if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
         const extras = document.querySelectorAll('.extra-project');
-        const isHidden = extras[0].style.display === '' || extras[0].style.display === 'none';
+        if (!extras.length) return;
+
+        const isHidden = getComputedStyle(extras[0]).display === 'none';
 
         extras.forEach(el => {
-            el.style.display = isHidden ? 'block' : 'none';
+        el.style.display = isHidden ? '' : 'none';
         });
 
-        this.textContent = isHidden
-            ? 'Weniger Projekte anzeigen'
-            : 'Weitere Projekte anzeigen';
+        toggleBtn.textContent = isHidden
+        ? 'Weniger Projekte anzeigen'
+        : 'Weitere Projekte anzeigen';
     });
+    }
+
 
 });
