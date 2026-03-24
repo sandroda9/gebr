@@ -11286,6 +11286,29 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
+
+.team-image-wrapper {
+  max-width: 420px;
+  margin: 3rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.team-image-wrapper:hover {
+  transform: scale(1.03);
+}
+
+
+
 section#contact {
   background-color: #212529;
   background-image: url("../images/map-image.png");
