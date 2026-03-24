@@ -51,4 +51,18 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    
+    document.getElementById('toggleProjects').addEventListener('click', function () {
+        const extras = document.querySelectorAll('.extra-project');
+        const isHidden = extras[0].style.display === '' || extras[0].style.display === 'none';
+
+        extras.forEach(el => {
+            el.style.display = isHidden ? 'block' : 'none';
+        });
+
+        this.textContent = isHidden
+            ? 'Weniger Projekte anzeigen'
+            : 'Weitere Projekte anzeigen';
+    });
+
 });
