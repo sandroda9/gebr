@@ -68,6 +68,7 @@ window.addEventListener('DOMContentLoaded', event => {
         toggleBtn.textContent = isHidden
         ? 'Weniger Projekte anzeigen'
         : 'Weitere Projekte anzeigen';
+        console.log('Toggle script loaded');
     });
     }
 
