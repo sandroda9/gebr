@@ -56,7 +56,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
     if (toggleBtn) {
     toggleBtn.addEventListener('click', function () {
+        console.log('Button geklickt');
         const extras = document.querySelectorAll('.extra-project');
+        console.log('Extras gefunden:', extras.length);
         if (!extras.length) return;
 
         const isHidden = getComputedStyle(extras[0]).display === 'none';
