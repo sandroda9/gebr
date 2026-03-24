@@ -4375,6 +4375,10 @@ textarea.form-control-lg {
   --bs-accordion-active-bg: #fffae6;
 }
 
+.extra-project {
+  display: none;
+}
+
 .accordion-button {
   position: relative;
   display: flex;
