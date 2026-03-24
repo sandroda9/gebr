@@ -4376,11 +4376,14 @@ textarea.form-control-lg {
 }
 
 
+/* Zusätzliche Projekte standardmässig verstecken */
 .extra-project {
-  display: none;
+  display: none !important;
 }
+
+/* Wenn "show" gesetzt ist, wieder anzeigen */
 .extra-project.show {
-  display: block;
+  display: block !important;
 }
 
 

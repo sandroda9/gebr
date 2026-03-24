@@ -9,12 +9,12 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+  // ------------------------------------------------------------
   // Navbar shrink function
+  // ------------------------------------------------------------
   const navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector('#mainNav');
-    if (!navbarCollapsible) {
-      return;
-    }
+    if (!navbarCollapsible) return;
 
     if (window.scrollY === 0) {
       navbarCollapsible.classList.remove('navbar-shrink');
@@ -23,13 +23,12 @@ window.addEventListener('DOMContentLoaded', event => {
     }
   };
 
-  // Shrink the navbar
   navbarShrink();
-
-  // Shrink the navbar when page is scrolled
   document.addEventListener('scroll', navbarShrink);
 
+  // ------------------------------------------------------------
   // Activate Bootstrap scrollspy on the main nav element
+  // ------------------------------------------------------------
   const mainNav = document.body.querySelector('#mainNav');
   if (mainNav && window.bootstrap) {
     new bootstrap.ScrollSpy(document.body, {
@@ -38,7 +37,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   }
 
+  // ------------------------------------------------------------
   // Collapse responsive navbar when toggler is visible
+  // ------------------------------------------------------------
   const navbarToggler = document.body.querySelector('.navbar-toggler');
   const responsiveNavItems = [].slice.call(
     document.querySelectorAll('#navbarResponsive .nav-link')
@@ -52,36 +53,37 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   });
 
-  // ============================================================
-  // Projects toggle (show/hide extra projects)
-  // Requires:
-  //  - extra projects have class: .extra-project
-  //  - CSS: .extra-project { display:none; } (or class-based toggle)
-  //  - button: id="toggleProjects"
-  // ============================================================
-
+  // ------------------------------------------------------------
+  // Projects toggle (bombensicher)
+  // Voraussetzungen:
+  //  - Projekte 4–6 haben die Klasse: extra-project
+  //  - CSS:
+  //      .extra-project { display:none !important; }
+  //      .extra-project.show { display:block !important; }
+  //  - Button hat: id="toggleProjects"
+  // ------------------------------------------------------------
   const toggleBtn = document.getElementById('toggleProjects');
 
   if (toggleBtn) {
-    toggleBtn.addEventListener('click', function () {
+    toggleBtn.addEventListener('click', () => {
       const extras = document.querySelectorAll('.extra-project');
-      console.log('Button geklickt');
-      console.log('Extras gefunden:', extras.length);
-
       if (!extras.length) return;
 
-      // Detect current state (hidden via CSS)
-      const isHidden = getComputedStyle(extras[0]).display === 'none';
+      // Wenn das erste Extra NICHT "show" hat, sind sie aktuell versteckt
+      const willShow = !extras[0].classList.contains('show');
 
-      // Option A: inline toggle (works if no !important overrides)
       extras.forEach(el => {
-        el.style.display = isHidden ? '' : 'none';
+        el.classList.toggle('show', willShow);
       });
 
-      // Update button label
-      toggleBtn.textContent = isHidden
+      toggleBtn.textContent = willShow
         ? 'Weniger Projekte anzeigen'
         : 'Weitere Projekte anzeigen';
+
+      // Optional: bei "Weniger" wieder etwas nach oben scrollen (UX)
+      // if (!willShow) {
+      //   document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // }
     });
   }
 
