@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   });
 
-  // ✅ Toggle projects (3 weitere anzeigen)
+  // Toggle projects (3 weitere anzeigen)
   const toggleBtn = document.getElementById('toggleProjects');
 
   if (toggleBtn) {
