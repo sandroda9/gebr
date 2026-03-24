@@ -11187,7 +11187,7 @@ header.masthead .masthead-heading {
 }
 .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
   margin-top: 0;
-  color: rgb(255, 255, 255);
+  color: inherit;
 }
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
   text-transform: none;
