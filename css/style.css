@@ -4139,6 +4139,7 @@ textarea.form-control-lg {
 }
 
 .navbar-green {
+  background-color: rgb(0, 120, 120); /* manuell hinzugefügt*/
   --bs-navbar-color: rgba(0, 120, 120, 0.55);
   --bs-navbar-hover-color: rgba(0, 120, 120, 0.75);
   --bs-navbar-disabled-color: rgba(0, 120, 120, 0.25);
