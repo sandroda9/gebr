@@ -11432,6 +11432,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+
+.section-heading {
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+
 .contact-card {
     background: #fff;
     padding: 2rem 1.5rem;
