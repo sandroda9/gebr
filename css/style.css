@@ -10975,16 +10975,64 @@ p {
   }
 }
 header.masthead {
+  position: relative;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  overflow: hidden; 
 }
+
+header.masthead::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.45), rgba(0,0,0,.35));
+  z-index: 1;
+}
+
+header.masthead .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Gemeinsame Eigenschaften der drei Hintergrund-Layer */
+
+.masthead-bg {
+  position: absolute;
+  inset: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: mastheadFade 18s infinite ease-in-out;  /* 3 Bilder * 6s = 18s */
+  will-change: opacity;
+  z-index: 0; /* unter dem Overlay */
+}
+
+
+/* Deine drei Bilder (Dateiendungen ggf. anpassen) */
+.masthead-bg.bg1 { background-image: url("../images/hero1.jpg"); animation-delay: 0s;  }
+.masthead-bg.bg2 { background-image: url("../images/hero2.jpg"); animation-delay: 6s;  }
+.masthead-bg.bg3 { background-image: url("../images/hero3.jpg"); animation-delay: 12s; }
+
+
+/* Sanfte Überblendung: ~1s ein-/ausblenden, ~5s sichtbar */
+@keyframes mastheadFade {
+  0%   { opacity: 0; }
+  6%   { opacity: 1; }   /* einblenden */
+  33%  { opacity: 1; }   /* sichtbar   */
+  39%  { opacity: 0; }   /* ausblenden */
+  100% { opacity: 0; }
+}
+
+
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: normal;
