@@ -11500,3 +11500,10 @@ body {
 section.page-section {
   min-height: 100vh;
 }
+
+
+#team,
+#contact {
+  min-height: 100vh;
+}
+
