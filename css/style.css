@@ -11483,3 +11483,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+
+/* NAVBAR ACTIVE LINK FIX */
+#mainNav .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#mainNav .nav-link:hover {
+  color: #ffffff;
+}
+
+#mainNav .nav-link.active {
+  color: #ffc800 !important; /* Gold nur für aktiven Punkt */
+}
