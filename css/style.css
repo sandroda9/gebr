@@ -11587,3 +11587,30 @@ section.page-section {
   transform: translateX(0);
 }
 
+/* ================================
+   Dienstleistungen – Reveal Effekt
+   ================================ */
+
+.service-item {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 0.9s ease-out,
+    transform 0.9s cubic-bezier(.22,1,.36,1);
+}
+
+/* sichtbar */
+.service-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Icon Akzent */
+.service-item .fa-stack i {
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.service-item.in-view .fa-stack i.fa-stack-2x {
+  color: #ffc800;
+}
+

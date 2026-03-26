@@ -141,4 +141,26 @@ window.addEventListener('DOMContentLoaded', event => {
 
         contactCards.forEach(card => contactObserver.observe(card));
 
+
+        
+        // ------------------------------------------------------------
+        // Dienstleistungen – Reveal Effekt
+        // ------------------------------------------------------------
+        const serviceItems = document.querySelectorAll('.service-item');
+
+        const serviceObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                serviceObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        serviceItems.forEach(item => serviceObserver.observe(item));
+
+
 });
