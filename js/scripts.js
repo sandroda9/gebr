@@ -103,7 +103,7 @@ window.addEventListener('DOMContentLoaded', event => {
           // ------------------------------------------------------------
       // Projekte – Scroll Animation (staggered)
       // ------------------------------------------------------------
-      const projectItems = document.querySelectorAll('.project-item');
+      const projectItems = document.querySelectorAll('.portfolio-item');
 
       const projectObserver = new IntersectionObserver(
         (entries) => {
