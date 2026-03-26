@@ -11507,3 +11507,16 @@ section.page-section {
   min-height: 100vh;
 }
 
+
+#contact .card {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 576px) {
+  #contact .card {
+    max-width: 100%;
+  }
+}
