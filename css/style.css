@@ -11516,7 +11516,7 @@ section.page-section {
 /* Tablet */
 @media (max-width: 992px) {
   .story-headline {
-    font-size: 1cqi;
+    font-size: 1rem;
   }
 }
 
