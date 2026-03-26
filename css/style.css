@@ -11551,8 +11551,8 @@ section.page-section {
 .portfolio-item {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1.2s cubic-bezier(.22,1,.36,1),
-              transform 1.2s cubic-bezier(.22,1,.36,1)
+  transition: opacity 3s cubic-bezier(.22,1,.36,1),
+              transform 3s cubic-bezier(.22,1,.36,1)
 
 }
 
