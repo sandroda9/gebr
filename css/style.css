@@ -91,9 +91,6 @@
   }
 }
 
-html, body {
-    overflow-x: hidden;
-}
 
 
 body {
@@ -11496,6 +11493,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 
