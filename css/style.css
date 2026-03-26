@@ -11507,3 +11507,8 @@ section.page-section {
   min-height: 100vh;
 }
 
+
+.page-section {
+  scroll-margin-top: 160px; /* Navbar-Höhe */
+}
+
