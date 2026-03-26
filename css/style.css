@@ -11507,3 +11507,24 @@ section.page-section {
   min-height: 100vh;
 }
 
+/* CTA / Story Headline – Responsive */
+.story-headline {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .story-headline {
+    font-size: 2.4rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .story-headline {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+}
+
