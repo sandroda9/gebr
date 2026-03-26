@@ -11525,9 +11525,9 @@ section.page-section {
 /* Mobile */
 @media (max-width: 576px) {
   .story-headline {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     line-height: 1.2;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
   }
 }
 
