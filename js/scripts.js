@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', event => {
   });
 
   // ------------------------------------------------------------
-  // Projects toggle (bombensicher)
+  // Projects toggle 
   // Voraussetzungen:
   //  - Projekte 4–6 haben die Klasse: extra-project
   //  - CSS:
@@ -76,5 +76,20 @@ window.addEventListener('DOMContentLoaded', event => {
       // }
     });
   }
+    // ------------------------------------------------------------
+    // ScrollSpy – FINAL & STABIL
+    // ------------------------------------------------------------
+    const mainNav = document.getElementById('mainNav');
 
+    if (mainNav && window.bootstrap) {
+      const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#mainNav',
+        offset: 120, // Höhe deiner fixed Navbar
+      });
+
+      // Wichtig bei Bildern & dynamischen Höhen
+      window.addEventListener('load', () => {
+        scrollSpy.refresh();
+      });
+    }
 });
