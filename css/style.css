@@ -10866,10 +10866,6 @@ html {
   scroll-padding-top: 4.5rem;
 }
 
-body {
-  position: relative;
-}
-
 p {
   line-height: 1.75;
 }
@@ -11496,4 +11492,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 #mainNav .nav-link.active {
   color: #ffc800 !important; /* Gold nur für aktiven Punkt */
+}
+
+body {
+  position: relative;
 }
