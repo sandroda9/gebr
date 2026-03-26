@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded', event => {
             if (entry.isIntersecting) {
               setTimeout(() => {
                 entry.target.classList.add('in-view');
-              }, index * 150); // zeitversetzt
+              }, index * 250); // zeitversetzt
               projectObserver.unobserve(entry.target);
             }
           });
