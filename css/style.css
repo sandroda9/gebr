@@ -11506,3 +11506,9 @@ section.page-section {
 #contact {
   min-height: 100vh;
 }
+
+
+#contact .contact-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+}
