@@ -11642,3 +11642,20 @@ section.page-section {
   font-style: normal;
   font-display: swap;
 }
+
+
+/* ================================
+   Team-Bild – Slide In von unten
+   ================================ */
+
+.team-image-wrapper {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.1s ease-out, transform 1.1s cubic-bezier(.22,1,.36,1);
+}
+
+.team-image-wrapper.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
