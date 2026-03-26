@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', event => {
     if (mainNav && window.bootstrap) {
       const scrollSpy = new bootstrap.ScrollSpy(document.body, {
         target: '#mainNav',
-        offset: 120, // Höhe deiner fixed Navbar
+        offset: 160, // Höhe deiner fixed Navbar
       });
 
       // Wichtig bei Bildern & dynamischen Höhen
