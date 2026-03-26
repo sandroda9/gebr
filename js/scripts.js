@@ -76,35 +76,29 @@ window.addEventListener('DOMContentLoaded', event => {
       // }
     });
   }
-      // ------------------------------------------------------------
-      // ScrollSpy – RESPONSIVE FIX
-      // ------------------------------------------------------------
-      const mainNav = document.getElementById('mainNav');
+        // ------------------------------------------------------------
+    // ScrollSpy – FINAL FIX (richtiger Scroll-Container)
+    // ------------------------------------------------------------
+    const mainNav = document.getElementById('mainNav');
 
-      if (mainNav && window.bootstrap) {
-        const getOffset = () => {
-          return window.innerWidth < 992
-            ? 200   // Mobile / Tablet
-            : 300;  // Desktop
-        };
+    if (mainNav && window.bootstrap) {
+      let scrollSpy = new bootstrap.ScrollSpy(document.documentElement, {
+        target: '#mainNav',
+        offset: 160,
+      });
 
-        let scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      window.addEventListener('load', () => {
+        scrollSpy.refresh();
+      });
+
+      window.addEventListener('resize', () => {
+        scrollSpy.dispose();
+        scrollSpy = new bootstrap.ScrollSpy(document.documentElement, {
           target: '#mainNav',
-          offset: getOffset(),
+          offset: 160,
         });
+      });
+    }
 
-        // Re-init bei Resize (wichtig!)
-        window.addEventListener('resize', () => {
-          scrollSpy.dispose();
-          scrollSpy = new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: getOffset(),
-          });
-        });
-
-        window.addEventListener('load', () => {
-          scrollSpy.refresh();
-        });
-      }
 
 });
