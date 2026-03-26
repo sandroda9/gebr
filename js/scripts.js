@@ -76,20 +76,35 @@ window.addEventListener('DOMContentLoaded', event => {
       // }
     });
   }
-    // ------------------------------------------------------------
-    // ScrollSpy – FINAL & STABIL
-    // ------------------------------------------------------------
-    const mainNav = document.getElementById('mainNav');
+      // ------------------------------------------------------------
+      // ScrollSpy – RESPONSIVE FIX
+      // ------------------------------------------------------------
+      const mainNav = document.getElementById('mainNav');
 
-    if (mainNav && window.bootstrap) {
-      const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: '#mainNav',
-        offset: 160, // Höhe deiner fixed Navbar
-      });
+      if (mainNav && window.bootstrap) {
+        const getOffset = () => {
+          return window.innerWidth < 992
+            ? 200   // Mobile / Tablet
+            : 300;  // Desktop
+        };
 
-      // Wichtig bei Bildern & dynamischen Höhen
-      window.addEventListener('load', () => {
-        scrollSpy.refresh();
-      });
-    }
+        let scrollSpy = new bootstrap.ScrollSpy(document.body, {
+          target: '#mainNav',
+          offset: getOffset(),
+        });
+
+        // Re-init bei Resize (wichtig!)
+        window.addEventListener('resize', () => {
+          scrollSpy.dispose();
+          scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            offset: getOffset(),
+          });
+        });
+
+        window.addEventListener('load', () => {
+          scrollSpy.refresh();
+        });
+      }
+
 });
