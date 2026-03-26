@@ -11517,7 +11517,7 @@ section.page-section {
 /* Tablet */
 @media (max-width: 992px) {
   .story-headline {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-top: 0.2rem;
   }
 }
@@ -11525,7 +11525,7 @@ section.page-section {
 /* Mobile */
 @media (max-width: 576px) {
   .story-headline {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     line-height: 1.2;
     margin-top: 0.1rem;
   }
