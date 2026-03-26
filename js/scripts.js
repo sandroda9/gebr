@@ -100,5 +100,45 @@ window.addEventListener('DOMContentLoaded', event => {
       });
     }
 
+          // ------------------------------------------------------------
+      // Projekte – Scroll Animation (staggered)
+      // ------------------------------------------------------------
+      const projectItems = document.querySelectorAll('.project-item');
+
+      const projectObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add('in-view');
+              }, index * 150); // zeitversetzt
+              projectObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      projectItems.forEach(item => projectObserver.observe(item));
+
+
+              // ------------------------------------------------------------
+        // Kontaktkarten – Slide In
+        // ------------------------------------------------------------
+        const contactCards = document.querySelectorAll('.contact-card');
+
+        const contactObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                contactObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        contactCards.forEach(card => contactObserver.observe(card));
 
 });
