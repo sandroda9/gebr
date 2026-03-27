@@ -11670,3 +11670,8 @@ section.page-section {
   }
 }
 
+
+header.masthead {
+  overflow: hidden;
+}
+
