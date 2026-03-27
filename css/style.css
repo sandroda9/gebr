@@ -11064,11 +11064,12 @@ header.masthead .masthead-heading {
 }
 
 
+
 @media (max-width: 576px) {
-    .masthead-heading {
-        font-size: 0.5rem;
-        line-height: 1.3;
-    }
+  header.masthead .masthead-heading {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
 }
 
 @media (min-width: 768px) {
