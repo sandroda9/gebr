@@ -11670,7 +11670,7 @@ section.page-section {
 
 @media (max-width: 576px) {
   .masthead-heading {
-    font-size: 1.6rem;
+    font-size: 1.0rem;
     line-height: 1.2;
   }
 }
