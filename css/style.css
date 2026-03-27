@@ -11659,3 +11659,11 @@ section.page-section {
   transform: translateY(0);
 }
 
+
+@media (max-width: 992px) {
+  .navbar-toggler {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
