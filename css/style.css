@@ -11066,7 +11066,7 @@ header.masthead .masthead-heading {
 
 @media (max-width: 576px) {
     .masthead-heading {
-        font-size: 1.4rem;
+        font-size: 1.0rem;
         line-height: 1.3;
     }
 }
