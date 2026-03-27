@@ -11667,3 +11667,11 @@ section.page-section {
   }
 }
 
+
+@media (max-width: 576px) {
+  h1.section-heading,
+  h2.section-heading {
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+}
