@@ -11662,7 +11662,7 @@ section.page-section {
 
 @media (max-width: 992px) {
   .navbar-toggler {
-    margin-left: 0;
+    margin-left: 20px;
     margin-right: auto;
   }
 }
