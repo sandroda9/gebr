@@ -11685,3 +11685,10 @@ header.masthead {
 .portfolio-modal .carousel-inner {
   pointer-events: auto;
 }
+
+
+/* Carousel-Pfeile in Seiten-Grün */
+.portfolio-modal .carousel {
+  --bs-carousel-control-color: #1f7a3a;
+}
+
