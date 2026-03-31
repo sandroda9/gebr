@@ -11687,8 +11687,11 @@ header.masthead {
 }
 
 
-/* Carousel-Pfeile in Seiten-Grün */
-.portfolio-modal .carousel {
-  --bs-carousel-control-color: rgb(0, 120, 120);
+
+/* Carousel-Pfeile in Seiten-Grün (Bootstrap-unabhängig) */
+.portfolio-modal .carousel-control-prev-icon,
+.portfolio-modal .carousel-control-next-icon {
+  filter: invert(34%) sepia(87%) saturate(401%) hue-rotate(140deg)
+          brightness(90%) contrast(95%);
 }
 
