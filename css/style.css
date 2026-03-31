@@ -11675,3 +11675,13 @@ header.masthead {
   overflow: hidden;
 }
 
+/* FIX: Carousel im Modal klickbar machen */
+.portfolio-modal .carousel-control-prev,
+.portfolio-modal .carousel-control-next {
+  pointer-events: auto;
+  z-index: 5;
+}
+
+.portfolio-modal .carousel-inner {
+  pointer-events: auto;
+}
