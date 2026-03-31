@@ -11689,6 +11689,6 @@ header.masthead {
 
 /* Carousel-Pfeile in Seiten-Grün */
 .portfolio-modal .carousel {
-  --bs-carousel-control-color: #1f7a3a;
+  --bs-carousel-control-color: rgb(0, 120, 120);
 }
 
