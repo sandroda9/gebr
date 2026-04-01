@@ -11803,3 +11803,9 @@ header.masthead {
 body.impressum footer {
   margin-top: -100px;
 }
+
+
+/* NUR Impressum: Abstand wegen fixed Navbar */
+body.impressum {
+  padding-top: 100px; /* Höhe deiner Navbar */
+}
