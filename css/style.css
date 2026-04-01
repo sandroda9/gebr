@@ -11804,7 +11804,7 @@ body.impressum .page-section {
   flex: 1 0 auto;
 }
 
-
+/* Impressum: Viewport um Spacer-Höhe reduzieren */
 body.impressum {
-  overflow-y: hidden;
+  min-height: calc(100vh - 100px);
 }
