@@ -67,8 +67,8 @@ window.addEventListener('DOMContentLoaded', event => {
       });
 
       toggleBtn.textContent = willShow
-        ? 'Weniger Projekte anzeigen'
-        : 'Weitere Projekte anzeigen';
+        ? 'Weniger anzeigen'
+        : 'Weitere anzeigen';
 
       // Optional: bei "Weniger" wieder etwas nach oben scrollen (UX)
       // if (!willShow) {
