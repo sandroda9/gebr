@@ -11708,3 +11708,21 @@ header.masthead {
     font-size: 0.9rem;
   }
 }
+
+
+/* Portfolio-Kacheln – gleicher Effekt wie Team-Bild */
+.portfolio-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.portfolio-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover-Effekt */
+.portfolio-item:hover {
+  transform: translateY(-6px) scale(1.02);
+}
