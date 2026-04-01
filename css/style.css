@@ -11797,3 +11797,9 @@ header.masthead {
 .portfolio-modal .carousel:focus-visible {
   outline: none;
 }
+
+
+/* Nur Impressum: verhindert unnötiges Scrollen */
+body.impressum .page-section {
+  flex: 1 0 auto;
+}
