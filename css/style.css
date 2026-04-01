@@ -11726,8 +11726,8 @@ header.masthead {
     box-shadow 0.35s ease;
 
   border-radius: 12px;
-  background: rgb(0,0,0);
-  border: 1px solid rgba(0,0,0,0.08);
+  background: rgb(255,255,255);
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .portfolio-item.in-view {
