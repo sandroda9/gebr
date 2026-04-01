@@ -11802,23 +11802,18 @@ header.masthead {
 
 
 /* ===============================
-   IMPRESSUM – FINALER FIX
+   IMPRESSUM – KORREKT & STABIL
    =============================== */
 
+/* Body bleibt 100vh – KEIN Padding hier */
 body.impressum {
-  box-sizing: border-box;
-  padding-top: 200px; /* dein gewünschter Abstand */
+  padding-top: 0;
 }
 
-body.impressum *,
-body.impressum *::before,
-body.impressum *::after {
-  box-sizing: inherit;
-}
-
-/* Agency-Section entschärfen */
-body.impressum .page-section {
-  padding-top: 1rem;
+/* Abstand unter der fixed Navbar */
+body.impressum main.page-section {
+  padding-top: 200px;   /* dein gewünschter Abstand */
   padding-bottom: 1rem;
 }
+
 
