@@ -11790,3 +11790,10 @@ header.masthead {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* Fokus-Rand beim Carousel entfernen */
+.portfolio-modal .carousel:focus,
+.portfolio-modal .carousel:focus-visible {
+  outline: none;
+}
