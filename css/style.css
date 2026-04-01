@@ -11799,7 +11799,22 @@ header.masthead {
 }
 
 
+
 /* NUR Impressum: Abstand wegen fixed Navbar */
-body.impressum {
-  padding-top: 300px; /* Höhe deiner Navbar */
+body.impressum .page-section {
+  padding-top: 100px; /* Höhe deiner Navbar */
+
+}
+
+
+/* NUR Impressum: unnötiges Vertical-Padding reduzieren */
+body.impressum .page-section {
+  padding-bottom: 2rem; /* statt 6rem */
+}
+
+
+/* NUR Impressum: Abstand wegen fixed Navbar */
+body.impressum .page-section {
+  padding-top: 100px;
+  padding-bottom: 2rem;
 }
