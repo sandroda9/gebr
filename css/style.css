@@ -11726,7 +11726,7 @@ header.masthead {
     box-shadow 0.35s ease;
 
   border-radius: 12px;
-  background: #000;
+  background: rgb(0,120,120);
   border: 1px solid rgba(0,120,120,0.08);
 }
 
