@@ -11696,3 +11696,15 @@ header.masthead {
 .portfolio-modal .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(0,120,120)' viewBox='0 0 16 16'%3E%3Cpath d='M5 1l8 7-8 7V1z'/%3E%3C/svg%3E");
 }
+
+/* Portfolio-Modals – Titel auf Mobile kleiner */
+@media (max-width: 576px) {
+  .portfolio-modal h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .portfolio-modal .item-intro {
+    font-size: 0.9rem;
+  }
+}
