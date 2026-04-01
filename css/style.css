@@ -11799,12 +11799,7 @@ header.masthead {
 }
 
 
-/* Nur Impressum: verhindert unnötiges Scrollen */
-body.impressum .page-section {
-  flex: 1 0 auto;
-}
-
-/* Impressum: Viewport um Spacer-Höhe reduzieren */
-body.impressum {
-  min-height: calc(100vh - 100px);
+/* NUR Impressum: Footer kompensiert Spacer */
+body.impressum footer {
+  margin-top: -100px;
 }
