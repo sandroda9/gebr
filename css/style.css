@@ -11800,9 +11800,19 @@ header.masthead {
 
 
 
-/* NUR Impressum: Navbar-Abstand + weniger Padding */
+
+/* ===============================
+   NUR IMPRESSUM – KORREKTER FIX
+   =============================== */
+
+/* 1. Platz für fixed Navbar schaffen */
+body.impressum {
+  padding-top: 120px; /* etwas mehr als Navbar+Logo */
+}
+
+/* 2. Agency-Section entschärfen */
 body.impressum .page-section {
-  padding-top: 100px;   /* Höhe der fixed Navbar */
-  padding-bottom: 2rem; /* statt 6rem aus dem Template */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
