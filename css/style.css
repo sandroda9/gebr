@@ -11797,3 +11797,9 @@ header.masthead {
 .portfolio-modal .carousel:focus-visible {
   outline: none;
 }
+
+
+/* Impressum: kompaktere Section */
+body.impressum .page-section {
+  padding: 3rem 0;
+}
