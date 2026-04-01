@@ -183,4 +183,22 @@ window.addEventListener('DOMContentLoaded', event => {
         teamObserver.observe(teamImage);
       }
 
+
+      
+      // ------------------------------------------------------------
+      // FIX: Carousel im Modal sofort aktivieren (Swipe + Keyboard)
+      // ------------------------------------------------------------
+      document.querySelectorAll('.portfolio-modal').forEach(modal => {
+        modal.addEventListener('shown.bs.modal', () => {
+          const carouselEl = modal.querySelector('.carousel');
+          if (!carouselEl) return;
+
+          // Carousel initialisieren / holen
+          const carousel = bootstrap.Carousel.getOrCreateInstance(carouselEl, {
+            interval: false,
+            touch: true,
+            keyboard: true
+          });
+
+
 });
