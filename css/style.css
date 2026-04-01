@@ -11800,21 +11800,9 @@ header.masthead {
 
 
 
-/* NUR Impressum: Abstand wegen fixed Navbar */
+/* NUR Impressum: Navbar-Abstand + weniger Padding */
 body.impressum .page-section {
-  padding-top: 100px; /* Höhe deiner Navbar */
-
+  padding-top: 100px;   /* Höhe der fixed Navbar */
+  padding-bottom: 2rem; /* statt 6rem aus dem Template */
 }
 
-
-/* NUR Impressum: unnötiges Vertical-Padding reduzieren */
-body.impressum .page-section {
-  padding-bottom: 2rem; /* statt 6rem */
-}
-
-
-/* NUR Impressum: Abstand wegen fixed Navbar */
-body.impressum .page-section {
-  padding-top: 100px;
-  padding-bottom: 2rem;
-}
