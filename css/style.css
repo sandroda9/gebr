@@ -10936,7 +10936,7 @@ p {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 1.0rem;
+  height: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11816,18 +11816,3 @@ body.impressum main.page-section {
   padding-bottom: 1rem;
 }
 
-
-
-
-/* Desktop */
-.navbar .navbar-brand img {
-    height: 100px !important;
-    width: auto;
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-    .navbar .navbar-brand img {
-        height: 32px;
-    }
-}
