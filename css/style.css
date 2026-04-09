@@ -11821,7 +11821,7 @@ body.impressum main.page-section {
 
 /* Desktop */
 .navbar .navbar-brand img {
-    height: 40px !important;
+    height: 100px !important;
     width: auto;
 }
 
