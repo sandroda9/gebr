@@ -11820,3 +11820,18 @@ body.impressum main.page-section {
   }
 }
 
+
+
+
+/* ================================
+   Projekte: Desktop immer sichtbar
+   ================================ */
+@media (min-width: 992px) {
+    .extra-project {
+        display: block !important;
+    }
+
+    #toggleProjects {
+        display: none !important;
+    }
+}
