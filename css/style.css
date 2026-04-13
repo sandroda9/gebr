@@ -11819,14 +11819,16 @@ body.impressum main.page-section {
 
 /* === Impressum / Datenschutz / Jobs === */
 
-.page-legal #mainNav .container {
+
+.page-legal .navbar .container {
   justify-content: center;
 }
 
-.page-legal #mainNav .navbar-brand {
+.page-legal .navbar .navbar-brand {
   margin: 0 auto;
   padding: 0;
 }
+
 
 
 .navbar .navbar-brand img {
