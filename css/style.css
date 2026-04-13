@@ -11816,3 +11816,11 @@ body.impressum main.page-section {
   padding-bottom: 1rem;
 }
 
+
+
+.navbar .navbar-brand img {
+  height: 20px;
+  width: auto;
+}
+
+
