@@ -11817,10 +11817,27 @@ body.impressum main.page-section {
 }
 
 
+/* Nur Impressum */
+.page-impressum #mainNav .container {
+  justify-content: center;
+}
+
+.page-impressum #mainNav .navbar-brand {
+  margin: 0 auto;
+  padding: 0;
+}
+
 
 .navbar .navbar-brand img {
-  height: 20px;
+  height: 40px;
   width: auto;
+}
+
+
+@media (max-width: 576px) {
+  .page-impressum #mainNav .navbar-brand img {
+    height: 2rem;
+  }
 }
 
 
