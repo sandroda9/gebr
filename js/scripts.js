@@ -162,26 +162,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
         serviceItems.forEach(item => serviceObserver.observe(item));
         
-      // ------------------------------------------------------------
-      // Team-Bild – Slide In von unten
-      // ------------------------------------------------------------
-      const teamImage = document.querySelector('.team-image-wrapper');
 
-      if (teamImage) {
-        const teamObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-                teamObserver.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.25 }
-        );
-
-        teamObserver.observe(teamImage);
-      }
 
 // ------------------------------------------------------------
 // FIX: Carousel im Modal sofort aktivieren (Swipe + Keyboard)
