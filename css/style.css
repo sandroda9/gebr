@@ -11835,3 +11835,26 @@ body.impressum main.page-section {
         display: none !important;
     }
 }
+
+
+
+
+/* =========================
+   Partner Logos – einheitlich
+========================= */
+
+.partner-logo {
+    width: 180px;        /* Logo-Fläche */
+    height: 90px;        /* sorgt für gleiche Linie */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logo img {
+    max-height: 75px;    /* optisch gleiche Höhe */
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
