@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /admin/          # Falls es einen geschützten Ordner gibt
 Allow: /
 
 Sitemap: https://www.gebrhermann.ch/sitemap.xml
